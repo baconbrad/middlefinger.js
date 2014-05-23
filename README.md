@@ -22,12 +22,12 @@ Is this failproof? No, but it is a decent effort. You can make it better? Contri
 Installation
 --------------
 
-All you need to do is stick the code below in your your JavaScript files. Remember to replace the URL ```mf.src``` with the location to your middlefinger.js file. The URL's domain will be the domain it uses to validate against the requesting server. So you need to be sure you use a full URL. Or your users are going to freak out.
+All you need to do is stick the code below in your your JavaScript files. Remember to replace the URL (```mf.src```) with the location to your middlefinger.js file. The URL's domain will be the domain it uses to validate against the requesting server. So you need to be sure you use a full URL. Or your users are going to freak out.
 
 ```javascript
 (function() {
     var mf = document.createElement('script'); mf.type = 'text/javascript'; mf.async = true;
-    mf.src = 'https://raw.githubusercontent.com/burritodemon/middlefingerjs/master/middlefinger.js';
+    mf.src = 'https://rawgit.com/burritodemon/middlefingerjs/master/middlefinger.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mf, s);
 })();
 ```
