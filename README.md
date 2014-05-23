@@ -15,7 +15,7 @@ MiddleFinger.js is NOT for the following:
   - Attacking the site's users through a means of Cross Site Scripting
   - Other illegal stuff
 
-Those reasons are all considered illegal even though they decided to be a douche and steal your code and bandwidth. Usage of this code is considered legal because the code executes on your server and they willingly linked your script(s). Like an idiot.
+Those reasons are all considered illegal even though they decided to be a douche and steal your code and bandwidth. Usage of this code is considered legal because the code is on your server and they willingly linked your script(s). Like an idiot.
 
 Is this failproof? No, but it is a decent effort. You can make it better? Contribute!
 
