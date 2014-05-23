@@ -44,8 +44,8 @@
             var scriptdomain = getDomain(scripts[i].getAttribute("src"));
             var requestdomain = getDomain(window.location.href);
             var allowed = [];
-            whitelist.forEach(function (v){
-                allowed.push(whitelist[v].toLowerCase());
+            whitelist.forEach(function (domain){
+                allowed.push(domain.toLowerCase());
             });
             if(requestdomain != scriptdomain && allowed.indexOf(requestdomain) === -1) {
                 flipBird();
