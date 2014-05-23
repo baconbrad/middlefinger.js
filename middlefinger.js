@@ -43,7 +43,11 @@
         if (scriptname.test(scripts[i].getAttribute("src"))) {
             var scriptdomain = getDomain(scripts[i].getAttribute("src"));
             var requestdomain = getDomain(window.location.href);
-            if(requestdomain != scriptdomain && whitelist.indexOf(requestdomain) === -1) {
+            var allowed = [];
+            for (var i = 0; i < whitelist.length; i++) {
+                allowed.push(whitelist[i].toLowerCase());
+            };
+            if(requestdomain != scriptdomain && allowed.indexOf(requestdomain) === -1) {
                 flipBird();
             }
         }
@@ -55,7 +59,7 @@
         } else {
            var domain = url.match(/^([^\/?#]+)(?:[\/?#]|$)/i, "");
         }
-        return domain[1];
+        return domain[1].toLowerCase();
     }
     
 })();
