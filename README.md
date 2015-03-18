@@ -27,7 +27,7 @@ All you need to do is stick the code below in your your JavaScript files. Rememb
 ```javascript
 (function() {
     var mf = document.createElement('script'); mf.type = 'text/javascript'; mf.async = true;
-    mf.src = 'https://rawgit.com/burritodemon/middlefinger.js/master/middlefinger.js';
+    mf.src = 'https://rawgit.com/baconface/middlefinger.js/master/middlefinger.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mf, s);
 })();
 ```
